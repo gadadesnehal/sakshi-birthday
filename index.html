@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happiest Birthday Saksuu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================================= -->
+    <!-- FLOATING PARTICLES -->
+    <!-- ================================= -->
+
+    <div id="particles"></div>
+
+
+    <!-- ================================= -->
+    <!-- PAGE 1 : INTRO -->
+    <!-- ================================= -->
+
+    <section class="page active" id="page1">
+
+        <div class="intro-box">
+
+            <div class="doll">
+
+                <div class="doll-head">
+                    🎀
+                </div>
+
+                <div class="doll-body">
+                    🧸
+                </div>
+
+            </div>
+
+
+            <h1 class="small-title">
+                Hey Sakshaa...
+            </h1>
+
+
+            <p class="intro-text">
+                I have prepared a little surprise for you.
+            </p>
+
+
+            <button onclick="startSurprise()">
+                Click Here
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 2 : CLEANING -->
+    <!-- ================================= -->
+
+    <section class="page" id="page2">
+
+        <div class="click-box">
+
+            <div class="broom">
+                🧹
+            </div>
+
+
+            <h2>
+                Surprise is in the process...
+            </h2>
+
+
+            <p>
+                Please wait...
+            </p>
+
+
+            <div class="progress-box">
+
+                <div id="progress"></div>
+
+            </div>
+
+
+            <button id="clickNext"
+                    class="hidden"
+                    onclick="showPage(3)">
+
+                Next
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 3 : BIRTHDAY WISH -->
+    <!-- ================================= -->
+
+    <section class="page" id="page3">
+
+        <div class="birthday-intro">
+
+            <div class="stars">
+                ✦ ✧ ✦ ✧ ✦
+            </div>
+
+
+            <h1 class="birthday-title">
+                Happy Birthday
+            </h1>
+
+
+            <h2 class="name">
+                Sakshi !
+            </h2>
+
+
+            <div class="wish-card">
+
+                <p>
+                    Every moment with you is special,
+                    but today is extra magical.
+                </p>
+
+                <p>
+                    Here's to another beautiful year
+                    of happiness, laughter and memories.
+                </p>
+
+            </div>
+
+
+            <button onclick="showPage(4)">
+                Continue
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 4 : CAKE -->
+    <!-- ================================= -->
+
+    <section class="page cake-page" id="page4">
+
+        <div class="cake-container">
+
+            <h1>
+                Let's Celebrate!
+            </h1>
+
+
+            <div class="success-message">
+                ✦ Wish mode successfully activated ✦
+            </div>
+
+
+            <!-- CAKE -->
+
+            <div class="cake">
+
+                <div class="candle">
+
+                    <div class="flame">
+                        🔥
+                    </div>
+
+                </div>
+
+
+                <div class="cake-top">
+                    🍓 🍓 🍓
+                </div>
+
+
+                <div class="cake-middle">
+                    🎂
+                </div>
+
+            </div>
+
+
+            <p class="cake-text">
+                Make a wish, Dear!
+            </p>
+
+
+            <button onclick="showPage(5)">
+                Open Card
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 5 : CARD -->
+    <!-- ================================= -->
+
+    <section class="page" id="page5">
+
+        <div class="card-wrapper">
+
+            <div class="birthday-card">
+
+                <div class="card-decoration">
+                    ✦
+                </div>
+
+
+                <h1>
+                    To My
+                </h1>
+
+
+                <h2>
+                    Cutie
+                </h2>
+
+
+                <div class="heart">
+                    ♥
+                </div>
+
+
+                <p>
+                    Sakshi, you are not just my little sister,
+                    you are one of the sweetest parts of my life.
+                </p>
+
+
+                <button onclick="showPage(6)">
+                    Open Memories
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 6 : PHOTO 1 -->
+    <!-- ================================= -->
+
+    <section class="page photo-page" id="page6">
+
+        <div class="photo-content">
+
+            <span class="memory-number">
+                MEMORY 01
+            </span>
+
+
+            <div class="photo-frame">
+
+                <img src="photos/photo1.jpg"
+                     alt="Sakshi Memory 1">
+
+            </div>
+
+
+            <h2>
+                Little Moments
+            </h2>
+
+
+            <p class="quote">
+                "A little cutie who makes
+                every moment brighter."
+            </p>
+
+
+            <button onclick="showPage(7)">
+                Next Memory
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 7 : PHOTO 2 -->
+    <!-- ================================= -->
+
+    <section class="page photo-page" id="page7">
+
+        <div class="photo-content">
+
+            <span class="memory-number">
+                MEMORY 02
+            </span>
+
+
+            <div class="photo-frame">
+
+                <img src="photos/photo2.jpg"
+                     alt="Sakshi Memory 2">
+
+            </div>
+
+
+            <h2>
+                Cutie Moment
+            </h2>
+
+
+            <p class="quote">
+                "Some people are special...
+                you're one of them, dear."
+            </p>
+
+
+            <button onclick="showPage(8)">
+                Next Memory
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 8 : PHOTO 3 -->
+    <!-- ================================= -->
+
+    <section class="page photo-page" id="page8">
+
+        <div class="photo-content">
+
+            <span class="memory-number">
+                MEMORY 03
+            </span>
+
+
+            <div class="photo-frame">
+
+                <img src="photos/photo3.jpg"
+                     alt="Sakshi Memory 3">
+
+            </div>
+
+
+            <h2>
+                Beautiful Smile
+            </h2>
+
+
+            <p class="quote">
+                "Keep smiling, Dear.
+                Your smile makes everything better."
+            </p>
+
+
+            <button onclick="showPage(9)">
+                Next Memory
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 9 : PHOTO 4 -->
+    <!-- ================================= -->
+
+    <section class="page photo-page" id="page9">
+
+        <div class="photo-content">
+
+            <span class="memory-number">
+                MEMORY 04
+            </span>
+
+
+            <div class="photo-frame">
+
+                <img src="photos/photo4.jpg"
+                     alt="Sakshi Memory 4">
+
+            </div>
+
+
+            <h2>
+                Sister Moment
+            </h2>
+
+
+            <p class="quote">
+                "Growing up, but always
+                my little sister."
+            </p>
+
+
+            <button onclick="showPage(10)">
+                Next Memory
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 10 : PHOTO 5 -->
+    <!-- ================================= -->
+
+    <section class="page photo-page" id="page10">
+
+        <div class="photo-content">
+
+            <span class="memory-number">
+                MEMORY 05
+            </span>
+
+
+            <div class="photo-frame">
+
+                <img src="photos/photo5.jpg"
+                     alt="Sakshi Memory 5">
+
+            </div>
+
+
+            <h2>
+                Forever Special
+            </h2>
+
+
+            <p class="quote">
+                "You’re not just my sister, you’re my best friend.
+                 You’re the one who understands me, supports me, and stays by my side through everything.
+                 I’m truly lucky to have you in my life."
+            </p>
+
+
+            <button onclick="showPage(11)">
+                One Last Surprise
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 11 : FINAL BIRTHDAY -->
+    <!-- ================================= -->
+
+    <section class="page final-page" id="page11">
+
+        <div class="final-content">
+
+            <div class="final-confetti">
+                🎉 ✦ 🎊 ✦ 🎉
+            </div>
+
+
+            <p class="final-small">
+                AND FINALLY...
+            </p>
+
+
+            <h1>
+                HAPPY
+            </h1>
+
+
+            <h1>
+                BIRTHDAY
+            </h1>
+
+
+            <h2>
+                SAKSHI
+            </h2>
+
+
+            <p class="cutie">
+                My Loving Sister
+            </p>
+
+
+            <div class="final-message">
+
+                <p>
+                    Stay always happy.
+                </p>
+
+                <p>
+                    Keep smiling.
+                </p>
+
+                <p>
+                    Keep shining.
+                </p>
+
+                <p>
+                    And always be the amazing
+                    person you are.
+                </p>
+
+            </div>
+
+
+            <p class="love">
+                With lots of love,
+                <br>
+                Your Sister
+            </p>
+
+
+            <div class="hearts">
+                ♥ ♥ ♥
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
